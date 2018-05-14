@@ -1,0 +1,189 @@
+body {
+    font-family: "Century Gothic", sans-serif;
+    
+}
+
+.social{
+    width: 25%;
+    padding: 20px;
+    max-width: 80px;
+}
+
+.bodyt{
+    font-family: "Century Gothic", sans-serif;    
+}
+
+.center { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+    text-align: center;
+    z-index: 0;
+
+}
+
+.header {
+     text-align: center;
+     padding: 24px;
+     margin-top: 30px;
+
+                }
+
+#navbar {
+		overflow: hidden;
+		background-color: #FFE73C ;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 0;
+        padding: 15px;
+
+}
+
+#navbart {
+        overflow: hidden;
+        background-color: white ;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 15px;
+
+}
+
+
+#navbar a {
+		float: left;
+		display: block;
+		color: white;
+		text-align: center;
+		padding:20px 26px;
+		text-decoration: none;
+		font-size: 14px;
+		font-family: Arial;
+
+}
+
+#upper_left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.title {
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+}
+
+.column {
+  flex: 30%;
+  max-width: 30%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.column img {
+  margin-top: 32px;
+  vertical-align: middle;
+}
+
+                .image {
+                    opacity: 1;
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    transition: .5s ease;
+                    backface-visibility: hidden;
+                    z-index: -1;
+
+                }
+
+                .container {
+                    position: relative;
+                   
+
+                }
+
+                .middle {
+                    transition: .5s ease;
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+
+                .container:hover .image {
+                    opacity: 0.15;
+                }
+
+                .container:hover .middle {
+                    opacity: 1;
+                }
+
+                .text {
+                    
+                    color: #333;
+                    font-size: 24px;
+                    padding: 16px 32px;
+                    font-family: Century Gothic;
+
+                }
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
